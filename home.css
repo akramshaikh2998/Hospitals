@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+nav {
+    background-color:#00bfff;
+    margin: 0;
+    overflow: hidden;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    /* This allow us to arrange list items in a row, without using float */
+    display: inline-block;
+    list-style-type: none;
+}
+ 
+/* Create a style for the first level items */
+nav > ul > li > a {
+    text-decoration: solid;
+    color: #ffffff;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+form {
+    float: right;
+    background-color: #4654e1;
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  ::placeholder {
+    color: #fff;
+    opacity: 0.7; 
+  }
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+  
+  svg {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+  }
+  .text {
+    font-size: 20px;
+    padding-left: 20px;
+    justify-content: left;
+  }
+  img {
+    max-width: 100%;
+    max-height:100%;
+  }
+  .picture{
+float: right;
+  }
+/* ---------------------FAQs--------------------------------   */
+
+  .faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 10px 10px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq-body{
+  margin: auto;
+  /* text-align: center; */
+ width: 50%; 
+ padding: auto;
+ 
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+  background-color: #F9F9F9;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.faq-page:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+/* --------------------------------------------------Carousel------------------------------------------------- */
+.Carousel .item {
+  background: #ff3f4d;
+}
+.Carousel h2 {
+  color: #FFF;
+  text-align: center;
+  padding: 5rem 0;
+  margin: 0;
+  font-style: italic;
+  font-weight: 300;
+}
+footer
+{
+  background-color:#00bfff;
+  margin: 0;
+  overflow: hidden;
+  padding: 10px 10px;
+margin:auto;
+
+}
+.policy{
+
+  float: right;
+  text-decoration: none;
+  overflow: hidden;
+  
+}
